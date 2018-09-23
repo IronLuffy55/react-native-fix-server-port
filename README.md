@@ -1,7 +1,7 @@
 # react-native-fix-server-port
 Package can change the port being used by the dev server. 
 
-This removes a manual step if app being worked on is meant to be used on a different port than 8081. Which if rm -rf node_modules is executed a lot can save some time.
+Removes manual step for projects where dev server needs to run port different from 8081 (default). Which can save time if rm -rf node_module is executed a lot
 
 Notes:
 1. iOS only
