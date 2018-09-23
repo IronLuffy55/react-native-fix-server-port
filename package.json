@@ -1,0 +1,13 @@
+{
+  "name": "react-native-fix-server-port",
+  "version": "0.0.1",
+  "private": true,
+  "author": "",
+  "license": "",
+  "rnpm": {
+    "plugin": "plugin.js",
+    "commands": {
+      "postlink": "node node_modules/react-native-fix-server-port/postlink.js"
+    }
+  }
+}
