@@ -4,7 +4,7 @@
   "private": true,
   "author": "",
   "license": "",
-  "bin": "./bin/rnsp.js",
+  "bin": {"rnsp":"./bin/rnsp.js"},
   "rnpm": {
     "plugin": "plugin.js",
     "commands": {
