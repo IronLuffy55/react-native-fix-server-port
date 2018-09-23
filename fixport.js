@@ -77,15 +77,8 @@ function fixPort(port, oldPort = defaultPort) {
     console.log("No server port defined");
     return;
   }
-
   fixPortForIOS(port, oldPort);
-  const scriptPort =
-    process.platform === "win32" ? `%npm_package_port%` : `$npm_package_port`;
   package.port = port;
-  package.scripts = {
-    ...(package.scripts || {}),
-    rnsp: `react-native start --port ${scriptPort}`
-  };
   fs.writeFileSync(getPackagePath(), JSON.stringify(package, null, 2));
 }
 module.exports = { fixPort, defaultPort, getPackageJSON };
