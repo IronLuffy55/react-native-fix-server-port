@@ -1,4 +1,4 @@
-const { fixPort, defaultPort } = require("./fixport");
+const { fixPort, defaultPort, getPackageJSON } = require("./fixport");
 module.exports = [
   {
     name: "fix-server-port [newport]",
@@ -10,7 +10,9 @@ module.exports = [
       }
     ],
     func: (argv, args, options) => {
-      const oldPort = options.oldport || defaultPort;
+      let oldPort = options.oldport;
+      if (!oldPort) oldPort = getPackageJSON().port;
+      if (!oldPort) oldPort = defaultPort;
       fixPort(argv[0], oldPort);
     }
   }

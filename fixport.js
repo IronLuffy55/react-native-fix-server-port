@@ -88,4 +88,4 @@ function fixPort(port, oldPort = defaultPort) {
   };
   fs.writeFileSync(getPackagePath(), JSON.stringify(package, null, 2));
 }
-module.exports = { fixPort, defaultPort };
+module.exports = { fixPort, defaultPort, getPackageJSON };
