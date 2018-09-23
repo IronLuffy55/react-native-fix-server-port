@@ -1,9 +1,8 @@
 {
   "name": "react-native-fix-server-port",
   "version": "0.0.1",
-  "private": true,
-  "author": "",
-  "license": "",
+  "author": "ironluffy55",
+  "license": "MIT",
   "bin": {"rnsp":"./bin/rnsp.js"},
   "rnpm": {
     "plugin": "plugin.js",
