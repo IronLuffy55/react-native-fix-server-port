@@ -1,6 +1,6 @@
 {
   "name": "@raydeck/react-native-fix-ios-server-port",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "ironluffy55",
   "license": "MIT",
   "bin": {
