@@ -1,13 +1,13 @@
 {
-  "name": "react-native-fix-server-port",
+  "name": "react-native-fix-ios-server-port",
   "version": "0.0.1",
   "author": "ironluffy55",
   "license": "MIT",
-  "bin": {"rnsp":"./bin/rnsp.js"},
-  "rnpm": {
-    "plugin": "plugin.js",
-    "commands": {
-      "postlink": "node node_modules/react-native-fix-server-port/postlink.js"
-    }
-  }
+  "bin": {
+    "rnsp": "./bin/rnsp.js"
+  },
+  "contributors": [
+    "Ray Deck"
+  ],
+  "main": "index.js"
 }
